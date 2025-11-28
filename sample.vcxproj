@@ -76,6 +76,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
@@ -101,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>false</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>G:\okul\GP11\space-forces\source\public;G:\okul\GP11\space-forces\source\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -134,54 +136,54 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="bg.h" />
-    <ClInclude Include="boss.h" />
-    <ClInclude Include="bossbullet.h" />
-    <ClInclude Include="bossbullet2.h" />
-    <ClInclude Include="bullet.h" />
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="collision.h" />
-    <ClInclude Include="debugproc.h" />
-    <ClInclude Include="effect.h" />
-    <ClInclude Include="enemy.h" />
-    <ClInclude Include="enemybullet.h" />
-    <ClInclude Include="fade.h" />
-    <ClInclude Include="file.h" />
-    <ClInclude Include="input.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="renderer.h" />
-    <ClInclude Include="result.h" />
-    <ClInclude Include="score.h" />
-    <ClInclude Include="sound.h" />
-    <ClInclude Include="sprite.h" />
-    <ClInclude Include="title.h" />
-    <ClInclude Include="tutorial.h" />
+    <ClInclude Include="source\public\bg.h" />
+    <ClInclude Include="source\public\boss.h" />
+    <ClInclude Include="source\public\bossbullet.h" />
+    <ClInclude Include="source\public\bossbullet2.h" />
+    <ClInclude Include="source\public\bullet.h" />
+    <ClInclude Include="source\public\camera.h" />
+    <ClInclude Include="source\public\collision.h" />
+    <ClInclude Include="source\public\debugproc.h" />
+    <ClInclude Include="source\public\effect.h" />
+    <ClInclude Include="source\public\enemy.h" />
+    <ClInclude Include="source\public\enemybullet.h" />
+    <ClInclude Include="source\public\fade.h" />
+    <ClInclude Include="source\public\file.h" />
+    <ClInclude Include="source\public\input.h" />
+    <ClInclude Include="source\public\main.h" />
+    <ClInclude Include="source\public\player.h" />
+    <ClInclude Include="source\public\renderer.h" />
+    <ClInclude Include="source\public\result.h" />
+    <ClInclude Include="source\public\score.h" />
+    <ClInclude Include="source\public\sound.h" />
+    <ClInclude Include="source\public\sprite.h" />
+    <ClInclude Include="source\public\title.h" />
+    <ClInclude Include="source\public\tutorial.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bg.cpp" />
-    <ClCompile Include="boss.cpp" />
-    <ClCompile Include="bossbullet.cpp" />
-    <ClCompile Include="bossbullet2.cpp" />
-    <ClCompile Include="bullet.cpp" />
-    <ClCompile Include="camera.cpp" />
-    <ClCompile Include="collision.cpp" />
-    <ClCompile Include="debugproc.cpp" />
-    <ClCompile Include="effect.cpp" />
-    <ClCompile Include="enemy.cpp" />
-    <ClCompile Include="enemybullet.cpp" />
-    <ClCompile Include="fade.cpp" />
-    <ClCompile Include="file.cpp" />
-    <ClCompile Include="input.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="result.cpp" />
-    <ClCompile Include="score.cpp" />
-    <ClCompile Include="sound.cpp" />
-    <ClCompile Include="sprite.cpp" />
-    <ClCompile Include="title.cpp" />
-    <ClCompile Include="tutorial.cpp" />
+    <ClCompile Include="source\private\bg.cpp" />
+    <ClCompile Include="source\private\boss.cpp" />
+    <ClCompile Include="source\private\bossbullet.cpp" />
+    <ClCompile Include="source\private\bossbullet2.cpp" />
+    <ClCompile Include="source\private\bullet.cpp" />
+    <ClCompile Include="source\private\camera.cpp" />
+    <ClCompile Include="source\private\collision.cpp" />
+    <ClCompile Include="source\private\debugproc.cpp" />
+    <ClCompile Include="source\private\effect.cpp" />
+    <ClCompile Include="source\private\enemy.cpp" />
+    <ClCompile Include="source\private\enemybullet.cpp" />
+    <ClCompile Include="source\private\fade.cpp" />
+    <ClCompile Include="source\private\file.cpp" />
+    <ClCompile Include="source\private\input.cpp" />
+    <ClCompile Include="source\private\main.cpp" />
+    <ClCompile Include="source\private\player.cpp" />
+    <ClCompile Include="source\private\renderer.cpp" />
+    <ClCompile Include="source\private\result.cpp" />
+    <ClCompile Include="source\private\score.cpp" />
+    <ClCompile Include="source\private\sound.cpp" />
+    <ClCompile Include="source\private\sprite.cpp" />
+    <ClCompile Include="source\private\title.cpp" />
+    <ClCompile Include="source\private\tutorial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
